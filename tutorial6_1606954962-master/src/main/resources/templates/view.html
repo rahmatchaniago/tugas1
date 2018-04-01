@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>View mahasiswa by NPM</title>
+    </head>
+    <body>
+    	<div th:replace = "fragments/fragment :: header" ></div>
+    	<div>
+		<a th:href="'/mahasiswa/viewall'" >
+			<button type="submit" class="btn btn-primary">Back</button>
+		</a>
+		</div>
+       	<h3 th:text="'NPM = ' + ${mahasiswa.npm}">NPM mahasiswa</h3>
+       	<h3 th:text="'Nama = ' + ${mahasiswa.nama}">Nama mahasiswa </h3>
+       	<h3 th:text="'Agama = ' + ${mahasiswa.agama}">Agama mahasiswa</h3>
+    </body>
+</html>
+

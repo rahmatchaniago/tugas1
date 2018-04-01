@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Add mahasiswa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<div th:replace = "fragments/fragment :: header" ></div>
+	<h1 class="page-header">Problem Editor</h1>
+
+	<form action="/mahasiswa/add/submit" method="get">
+		<div>
+			<label for="npm">NPM</label> <input type="text" name="npm" />
+		</div>
+		<div>
+			<label for="name">Nama</label> <input type="text" name="nama" />
+		</div>
+		<div>
+			<label for="agama">Agama</label> <input type="text" name="agama" />
+		</div>
+
+		<div>
+			<button type="submit" name="action" value="save">Save</button>
+		</div>
+	</form>
+
+</body>
+
+</html>
+
